@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+    <meta charset="UTF-8">
+    <html>
+        <head>
+            <link rel="shortcut icon" type="image/x-icon" href='favicon_io/favicon.ico'>
+          <title>Minha tabela</title>
+        </head>
+
+        <style>
+            h1{
+                background-color: cadetblue;
+                text-align: center;
+                padding:30px ;
+            }
+
+        </style>
+
+        <header>
+            <h1>Título da página</h1>
+        </header>
+
+        <body>
+            <style>
+                body {background-color:aliceblue;}
+
+                main{
+                    box-sizing: border-box;
+                    background-color: rgb(200, 200, 200);
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    margin:auto ;
+                }
+                
+                table{width: 90%;border-collapse:collapse; border:2px solid blue; empty-cells: hide;}
+                     
+                
+                thead{color:rgb(41, 35, 35); background-color: gray;
+                    font-size: 1.1em;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    text-align: left;}
+                   
+                    tbody{ color:red; text-align: left;}
+                   
+                    tfoot{color:rgb(41, 35, 35) ; background-color:gray; }
+                        
+                        tbody tr:nth-child(even)  {background-color: lightskyblue;}
+
+                        tbody tr:nth-child(odd) {background-color:lightcyan}  
+
+                        tbody tr:hover {background-color:yellow ;}
+
+                        caption{color:brown;
+                            caption-side: top;text-align: center; font-size: 1.1em;}
+
+                    #endereço{text-align: center;}
+
+                    .tabela{
+                        box-sizing: border-box;
+                        background-color: #222;
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: center;
+                        width: 50%;
+                        margin: 20px 0 0 340px ;
+                        
+                    }
+                    .Tabela thead, tbody, td{
+                        border: 2px solid blue;
+                        border-collapse: collapse;
+                    }    
+
+                    .Tabela{
+                        width: 80%;
+                    }
+               
+               
+            </style>
+            <main>
+            <table border="2" style="background-color:white" >
+                <caption>Tabela 1. clientes da havan </caption>
+                <thead>
+                <tr>
+                    <th rowspan="2">Nome</th>
+                    <th rowspan="2">Telefone</th>
+                    <th id="endereço" colspan="5">Endereço</th>
+                </tr>
+                <tr>
+                    <th>Rua</th>
+                    <th>Número</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>CEP</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>+55 21 925945243</td>
+                    <td>Joaquim meier</td>
+                    <td>84</td>
+                    <td>Rio de janeiro</td>
+                    <td>RJ</td>
+                    <td>10477100</td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>+55 21 925945243</td>
+                    <td></td>
+                    <td>84</td>
+                    <td>Rio de janeiro</td>
+                    <td>RJ</td>
+                    <td>10477100</td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>+55 21 925945243</td>
+                    <td>Joaquim meier</td>
+                    <td>84</td>
+                    <td>Rio de janeiro</td>
+                    <td>RJ</td>
+                    <td>10477100</td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>+55 21 925945243</td>
+                    <td>Joaquim meier</td>
+                    <td>84</td>
+                    <td>Rio de janeiro</td>
+                    <td>RJ</td>
+                    <td>10477100</td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>+55 21 925945243</td>
+                    <td>Joaquim meier</td>
+                    <td>84</td>
+                    <td>Rio de janeiro</td>
+                    <td>RJ</td>
+                    <td>10477100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                
+                <td colspan="7">Para mais informações, entre em contato conosco</td>
+                
+            </tfoot>
+            </table>
+         </main>
+
+         <div class="tabela">
+            <table class="Tabela">
+                <thead>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>UF</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>João Pedro</td>
+                        <td>Rio de Janeiro</td>
+                        <td>RJ</td>
+                    </tr>
+                    <tr>
+                        <td>João Victor</td>
+                        <td>Barra da Tijuca</td>
+                        <td>RJ</td>
+                    </tr>
+                    <tr>
+                        <td>Giulia</td>
+                        <td>Vitória</td>
+                        <td>Espírito Santo</td>
+                    </tr>
+                </tbody>
+
+            </table>
+         </div>
+
+        </body>
+
+    </html>
